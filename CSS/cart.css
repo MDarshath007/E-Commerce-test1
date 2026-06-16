@@ -1,0 +1,121 @@
+body{
+    color: white;
+    background-color: black;
+}
+.bag-icon{
+    width: 45px;
+    margin-right: 15px;
+}
+.cart-icon{
+    width: 45px;
+    margin: 0px 10px 0px 15px;
+}
+.navbar{
+    padding: 40px auto !important;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+form button{
+    color: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgb(128, 206, 255), rgb(15, 114, 249));
+    border-radius:5px;
+    padding: 0px 10px 0px 10px;
+    border: none;
+}
+form button:hover{
+    color: white;
+    background: linear-gradient(135deg, rgb(69, 111, 138), rgb(9, 63, 139));
+}
+/* CART PAGE */
+.cart-page {
+  padding-bottom: 40px;
+}
+
+/* PRODUCT CARD */
+.product {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.product-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product-name,
+.price,
+.total {
+  font-size:x-large;
+  margin: 0;
+}
+
+/* ORDER SUMMARY */
+.cart-summary {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.total-row {
+  margin-top: 15px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 0 10px;
+  }
+  .cart-page {
+    margin-top: 20px !important;
+  }
+  .product {
+    display: grid !important;
+    grid-template-columns: 80px 1fr 40px;
+    gap: 15px;
+    align-items: center;
+  }
+  .product-img {
+    width: 80px;
+    height: 80px;
+  }
+  .product-name {
+    font-size: 1rem;
+  }
+  .price,
+  .total {
+    font-size: 0.9rem;
+  }
+  .total,.product-img,.product-name{
+    margin-left: 13px;
+  }
+  .btn-group {
+    width: fit-content;
+  }
+  .dlt-btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+  }
+  .cart-icon {
+    margin: 10px 0;
+  }
+  .summary-row h3 {
+    font-size: 1rem;
+  }
+  .summary-row h2 {
+    font-size: 1.4rem;
+  }
+}

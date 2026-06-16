@@ -1,0 +1,58 @@
+body {
+  background: #000000;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #000000;
+}
+
+.success-page {
+  min-height: 85vh;
+}
+
+.success-card {
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  width: 700px;
+  text-align: center;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.check-circle {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+
+  background: #198754;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.order-details {
+  margin-top: 35px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
