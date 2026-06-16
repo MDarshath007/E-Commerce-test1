@@ -110,5 +110,5 @@ if (cart.length === 0) {
 
 function orderPlaced()
 {
-  window.location.href = "HTML files/order-success.html"
+  window.location.href = "order-success.html"
 }

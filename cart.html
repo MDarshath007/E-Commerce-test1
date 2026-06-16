@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="Assets/Icons/shopping.png" />
+
     <title>MeeKart</title>
+
+    <link rel="icon" href="Assets/Icons/shopping.png" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CSS/filter-page.css" />
+
+    <link rel="stylesheet" href="cart.css" />
   </head>
+
   <body>
+    <!-- NAVBAR -->
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid nav-bar">
         <a class="navbar-brand text-white" href="index.html"
@@ -44,6 +49,24 @@
                 >Home</a
               >
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a data-category="laptops" class="dropdown-item category-btnfilter-page.html">Laptops</a></li>
+                <li><a data-category="smartphones" class="dropdown-item category-btnfilter-page.html">Smartphones</a></li>
+                <li><a data-category="furniture" class="dropdown-item category-btnfilter-page.html">Furniture</a></li>
+                <li><a data-category="mens-shoes,womans-shoes" class="dropdown-item category-btnfilter-page.html">Footwear</a></li>
+                <li><a data-category="mens-watches,womans-watches" class="dropdown-item category-btnfilter-page.html">Watches</a></li>
+              </ul>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -61,14 +84,19 @@
         </div>
       </div>
     </nav>
-    <div class="container-md" id="filtered-container">
+
+    <!-- CART PAGE -->
+
+    <div class="container-lg cart-page mt-1" id="cart-container">
+      <h1 class="mb-3">Your Cart</h1>
     </div>
+    <div class="container-md" id="order-summary">
+      <h1 class="mb-3">Order Summary</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+    <script src="filter-page.js"></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
-  <script src="JS files/filter-page.js"></script>
-  <script src="JS files/app.js"></script>
 </html>

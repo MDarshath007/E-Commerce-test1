@@ -16,7 +16,7 @@ function renderFeaturedProducts(product) {
 return ` <div class="card rounded-3 mx-2 d-flex flex-column"
       style="min-width:14rem; min-height:430px;">
 
-  <a href="HTML files/product.html"
+  <a href="product.html"
      onclick="saveProduct(${product.id})"
      style="text-decoration:none; color:black;">
 
@@ -155,7 +155,7 @@ e.preventDefault();
     );
 
     window.location.href =
-      "HTML files/filter-page.html";
+      "filter-page.html";
   }
 );
 
@@ -234,7 +234,7 @@ searchBtn.addEventListener("click", async (e) => {
     );
 
     window.location.href =
-      "/HTML files/filter-page.html";
+      "filter-page.html";
 
     return;
   }
@@ -251,5 +251,5 @@ searchBtn.addEventListener("click", async (e) => {
   );
 
   window.location.href =
-    "/HTML files/filter-page.html";
+    "filter-page.html";
 });
