@@ -56,5 +56,5 @@ function saveFilteredProduct(id) {
   );
 
   window.location.href =
-    "/HTML files/product.html";
+    "HTML files/product.html";
 }
